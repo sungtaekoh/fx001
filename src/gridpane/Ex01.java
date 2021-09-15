@@ -1,5 +1,5 @@
 package gridpane;
-//복습 2 표처럼 만들어진다
+//복습 2 표처럼 만들어진다/위치로 입력한다
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
