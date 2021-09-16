@@ -5,10 +5,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-//앵커펜 자표로 움직인다
-public class Ex01 extends Application{
 
-
+public class Ex01T1 extends Application{
 	@Override
 	public void start(Stage arg0) throws Exception {
 		AnchorPane ap = new AnchorPane();
@@ -16,18 +14,20 @@ public class Ex01 extends Application{
 		Button btn2 = new Button("btn2");
 		
 		AnchorPane.setTopAnchor(btn1, 10.0);
-		AnchorPane.setRightAnchor(btn1, 10.0);
+		AnchorPane.setRightAnchor(btn2, 10.0);
 		
 		AnchorPane.setBottomAnchor(btn2, 10.0);
 		AnchorPane.setLeftAnchor(btn2, 10.0);
 		
 		ap.getChildren().addAll(btn1,btn2);
-		
-		
-		arg0.setScene(new Scene(ap,300,300));
+		arg0.setScene(new Scene(ap,300,300) );
 		arg0.show();
+
 	}
 	public static void main(String[] args) {
-	launch(args);	
+		launch(args);
 	}
+
+	
+
 }
